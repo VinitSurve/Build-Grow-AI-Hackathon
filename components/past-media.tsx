@@ -12,7 +12,7 @@ const pastEvents = [
   {
     title: "Workshop Snapshot",
     description: "Hands-on session during the event",
-    image: "/IMG_0758.jpg",
+    image: "/IMG_0758.JPG",
   },
   // {
   //   title: "Team Collaboration",

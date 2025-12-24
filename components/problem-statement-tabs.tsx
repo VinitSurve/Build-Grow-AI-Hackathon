@@ -7,56 +7,31 @@ import { Badge } from "@/components/ui/badge"
 
 const problemStatements = [
   {
-    category: "AI / ML",
+    category: "Industry Tracks",
     problems: [
       {
-        title: "Smart City Traffic Optimization",
-        description: "Build an AI system to predict and optimize traffic flow in urban areas using real-time data",
-        difficulty: "Advanced",
+        title: "🏥 Health Tech: Smarter healthcare and diagnostics",
+        description: "Build AI solutions to improve diagnostics, patient monitoring, and healthcare workflows.",
+        difficulty: "All Levels",
       },
       {
-        title: "Healthcare Diagnosis Assistant",
-        description: "Create a machine learning model to assist doctors in diagnosing diseases from medical images",
-        difficulty: "Intermediate",
-      },
-    ],
-  },
-  {
-    category: "Web & App Dev",
-    problems: [
-      {
-        title: "Progressive Web App for Local Businesses",
-        description: "Develop a PWA that helps small businesses manage inventory and customer relationships",
-        difficulty: "Intermediate",
+        title: "💰 FinTech: Financial automation and fraud prevention",
+        description: "Create tools for payment automation, risk analysis, or real-time fraud detection.",
+        difficulty: "All Levels",
       },
       {
-        title: "Real-time Collaboration Platform",
-        description: "Build a collaborative workspace with live editing and video conferencing capabilities",
-        difficulty: "Advanced",
-      },
-    ],
-  },
-  {
-    category: "Cloud & DevOps",
-    problems: [
-      {
-        title: "Serverless API Gateway",
-        description: "Design a scalable API gateway using serverless architecture on Google Cloud Platform",
-        difficulty: "Advanced",
+        title: "🔐 Cyber Security: AI-powered protection and threat detection",
+        description: "Design systems that leverage AI to detect, prevent, and respond to security threats.",
+        difficulty: "All Levels",
       },
       {
-        title: "Container Orchestration Dashboard",
-        description: "Create a monitoring dashboard for Kubernetes clusters with real-time metrics",
-        difficulty: "Intermediate",
+        title: "📚 Edu Tech: Learning accessibility and skill-building platforms",
+        description: "Build platforms that personalize learning, assessment, and skill development at scale.",
+        difficulty: "All Levels",
       },
-    ],
-  },
-  {
-    category: "Open Innovation",
-    problems: [
       {
-        title: "Your Big Idea",
-        description: "Bring your own problem statement and solution. Surprise us with your creativity!",
+        title: "🌾 Agri Tech: Smart farming and agricultural innovations",
+        description: "Use AI and IoT to optimize crop yields, resource usage, and supply-chain visibility.",
         difficulty: "All Levels",
       },
     ],
