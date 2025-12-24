@@ -1,6 +1,6 @@
 import Navbar from "@/components/navbar"
 import HeroSection from "@/components/hero-section"
-import AnimatedBackground from "@/components/animated-background"
+// import AnimatedBackground from "@/components/animated-background"
 import LocationCards from "@/components/location-cards"
 import HighlightsGrid from "@/components/highlights-grid"
 import Timeline from "@/components/timeline"
@@ -16,14 +16,14 @@ import Footer from "@/components/footer"
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-x-hidden">
-      <AnimatedBackground />
+      {/* <AnimatedBackground /> */}
       <Navbar />
       <div id="home">
         <HeroSection />
       </div>
-      <LocationCards />
+      {/* <LocationCards /> */}
       <div id="highlights">
-        <HighlightsGrid />
+        {/* <HighlightsGrid /> */}
       </div>
       <MarathiStatement />
       <div id="problem-statements">

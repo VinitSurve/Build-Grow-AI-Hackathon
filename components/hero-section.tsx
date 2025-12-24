@@ -56,6 +56,8 @@ export default function HeroSection() {
               </motion.p>
             </div>
 
+            <div className="text-2xl font-bold">Registration Start From 25th Dec</div>
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

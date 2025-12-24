@@ -2,13 +2,37 @@
 
 import { motion } from "framer-motion"
 
-const technologies = [
-  { name: "Google Cloud", icon: "☁️" },
-  { name: "Firebase", icon: "🔥" },
-  { name: "Gemini AI", icon: "✨" },
-  { name: "TensorFlow", icon: "🧠" },
-  { name: "Flutter", icon: "📱" },
-  { name: "Vertex AI", icon: "🤖" },
+const capabilities = [
+  {
+    name: "AI Applications",
+    description: "Production-ready solutions",
+    icon: "/gemini-start-building-card-apps.svg",
+  },
+  {
+    name: "Explore Models",
+    description: "Diverse model ecosystem",
+    icon: "/gemini-start-building-card-explore.svg",
+  },
+  {
+    name: "Integrate AI",
+    description: "Seamless API integration",
+    icon: "/gemini-start-building-card-integrate.svg",
+  },
+  {
+    name: "On-device AI",
+    description: "Edge computing capabilities",
+    icon: "/gemini-start-building-card-nano.svg",
+  },
+  {
+    name: "Secure AI Systems",
+    description: "Enterprise-grade security",
+    icon: "/gemini-start-building-card-security.svg",
+  },
+  {
+    name: "Open Models (Gemma)",
+    description: "Open-source AI foundation",
+    icon: "/gemini-start-building-gemma.png",
+  },
 ]
 
 export default function TechStack() {
@@ -22,33 +46,41 @@ export default function TechStack() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Powered By Google</h2>
-          <p className="text-muted-foreground text-lg">Build with world-class developer tools and platforms</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Build with Google AI</h2>
+          <p className="text-muted-foreground text-lg">
+            Core capabilities and technologies powering our community and hackathons
+          </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-          {technologies.map((tech, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {capabilities.map((capability, index) => (
             <motion.div
-              key={tech.name}
-              initial={{ opacity: 0, scale: 0.8 }}
+              key={capability.name}
+              initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: false }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ scale: 1.1, y: -5 }}
-              className="glassmorphism border-border/50 hover:border-primary/50 rounded-xl p-6 flex flex-col items-center justify-center gap-3 cursor-pointer transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 group"
+              transition={{ duration: 0.5, delay: index * 0.05 }}
+              whileHover={{ scale: 1.02 }}
+              className="group"
             >
-              <motion.span
-                animate={{
-                  scale: [1, 1.2, 1],
-                }}
-                transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: index * 0.2 }}
-                className="text-5xl grayscale group-hover:grayscale-0 transition-all"
-              >
-                {tech.icon}
-              </motion.span>
-              <span className="text-sm font-semibold text-center text-muted-foreground group-hover:text-foreground transition-colors">
-                {tech.name}
-              </span>
+              <div className="glassmorphism border border-border/50 hover:border-neon-cyan/30 rounded-xl p-6 flex flex-col items-center justify-center gap-4 cursor-pointer transition-all duration-300 h-full hover:shadow-lg hover:shadow-neon-cyan/5">
+                <div className="w-16 h-16 flex items-center justify-center relative">
+                  <img
+                    src={capability.icon}
+                    alt={capability.name}
+                    className="w-full h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                    style={{ filter: "grayscale(100%) brightness(0.8) sepia(1) hue-rotate(200deg) saturate(5)" }}
+                  />
+                </div>
+                <div className="text-center space-y-1">
+                  <h3 className="text-sm font-semibold text-foreground/90 group-hover:text-neon-cyan transition-colors">
+                    {capability.name}
+                  </h3>
+                  <p className="text-xs text-muted-foreground/60 leading-tight">
+                    {capability.description}
+                  </p>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
