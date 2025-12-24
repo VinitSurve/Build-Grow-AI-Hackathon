@@ -5,24 +5,29 @@ import { motion } from "framer-motion"
 
 const pastEvents = [
   {
-    title: "TechVerse 2024",
-    description: "Over 400 developers participated",
-    image: "/hackathon-event-developers-working.jpg",
+    title: "Community Gathering",
+    description: "Participants networking and sharing ideas",
+    image: "/20250503_114742_imgupscaler.ai_V1(Fast)_4K.png",
   },
   {
-    title: "Workshop Series",
-    description: "Monthly sessions on AI and Cloud",
-    image: "/tech-workshop-training-session.jpg",
+    title: "Workshop Snapshot",
+    description: "Hands-on session during the event",
+    image: "/IMG_0758.jpg",
+  },
+  // {
+  //   title: "Team Collaboration",
+  //   description: "Teams building and collaborating",
+  //   image: "/FILE0464.jpg",
+  // },
+  {
+    title: "Demo Highlights",
+    description: "Projects showcased on demo day",
+    image: "/IMG_0678_imgupscaler.ai_V1(Fast)_4K.png",
   },
   {
-    title: "Community Meetups",
-    description: "Regular networking events",
-    image: "/developer-meetup-networking.jpg",
-  },
-  {
-    title: "Demo Day Highlights",
-    description: "Innovative projects showcased",
-    image: "/tech-presentation-demo-day.jpg",
+    title: "Stage Moments",
+    description: "Awards and closing highlights",
+    image: "/IMG_0684_imgupscaler.ai_V1(Fast)_4K.png",
   },
 ]
 
@@ -35,17 +40,14 @@ export default function PastMedia() {
 
     let animationFrameId: number
     let scrollPosition = 0
-    const speed = 0.5 // Adjust speed here
+    const speed = 0.8 // Adjusted scroll speed for better visibility
 
     const scroll = () => {
       scrollPosition += speed
       if (scrollContainer) {
-        scrollContainer.scrollLeft = scrollPosition
-
-        // Reset scroll position when reaching the middle (for seamless loop)
-        if (scrollPosition >= scrollContainer.scrollWidth / 2) {
-          scrollPosition = 0
-        }
+        // use modulo to wrap smoothly
+        const maxScroll = scrollContainer.scrollWidth / 2
+        if (maxScroll > 0) scrollContainer.scrollLeft = scrollPosition % maxScroll
       }
       animationFrameId = requestAnimationFrame(scroll)
     }
@@ -82,10 +84,10 @@ export default function PastMedia() {
           
           <div 
             ref={scrollRef}
-            className="overflow-x-hidden overflow-y-hidden scrollbar-hide"
+            className="overflow-x-auto overflow-y-hidden scrollbar-hide"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            <div className="flex gap-6">
+            <div className="inline-flex gap-6">
               {duplicatedEvents.map((event, index) => (
                 <motion.div
                   key={`${event.title}-${index}`}
@@ -100,7 +102,7 @@ export default function PastMedia() {
                         alt={event.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-30" />
                       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       <div className="absolute bottom-0 left-0 right-0 p-6 space-y-2">
                         <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
