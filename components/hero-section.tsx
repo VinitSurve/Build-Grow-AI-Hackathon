@@ -30,7 +30,7 @@ export default function HeroSection() {
                 className="inline-block"
               >
                 <span className="text-sm font-mono text-neon-cyan tracking-wider uppercase">
-                  Build & Grow AI Hackathon 2025
+                  Build the Future with AI
                 </span>
               </motion.div>
               <motion.h1
@@ -39,10 +39,10 @@ export default function HeroSection() {
                 transition={{ delay: 0.5 }}
                 className="text-5xl md:text-7xl font-bold tracking-tight text-balance"
               >
-                Build the Future
+                Build & Grow AI
                 <br />
                 <span className="bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-violet bg-clip-text text-transparent">
-                  with AI & Cloud
+                  Hackathon 2025
                 </span>
               </motion.h1>
               <motion.p
@@ -56,7 +56,7 @@ export default function HeroSection() {
               </motion.p>
             </div>
 
-            <div className="text-2xl font-bold">Registration Start From 25th Dec</div>
+            <div className="text-2xl font-bold">Registration Starts From 25th Dec</div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
