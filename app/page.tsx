@@ -9,6 +9,7 @@ import ProblemStatementTabs from "@/components/problem-statement-tabs"
 import TechStack from "@/components/tech-stack"
 import PastMedia from "@/components/past-media"
 import AboutSection from "@/components/about-section"
+import DevelopersSection from "@/components/developers-section"
 import OrganizersSection from "@/components/organizers-section"
 import FAQSection from "@/components/faq-section"
 import Footer from "@/components/footer"
@@ -41,9 +42,11 @@ export default function Home() {
       <div id="about">
         <AboutSection />
       </div>
+      
       <div id="organizers">
         <OrganizersSection />
       </div>
+      <DevelopersSection />
       <div id="faq">
         <FAQSection />
       </div>
