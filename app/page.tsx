@@ -1,3 +1,4 @@
+import Navbar from "@/components/navbar"
 import HeroSection from "@/components/hero-section"
 import AnimatedBackground from "@/components/animated-background"
 import LocationCards from "@/components/location-cards"
@@ -8,6 +9,7 @@ import ProblemStatementTabs from "@/components/problem-statement-tabs"
 import TechStack from "@/components/tech-stack"
 import PastMedia from "@/components/past-media"
 import AboutSection from "@/components/about-section"
+import OrganizersSection from "@/components/organizers-section"
 import FAQSection from "@/components/faq-section"
 import Footer from "@/components/footer"
 
@@ -15,16 +17,36 @@ export default function Home() {
   return (
     <main className="relative min-h-screen overflow-x-hidden">
       <AnimatedBackground />
-      <HeroSection />
+      <Navbar />
+      <div id="home">
+        <HeroSection />
+      </div>
       <LocationCards />
-      <HighlightsGrid />
+      <div id="highlights">
+        <HighlightsGrid />
+      </div>
       <MarathiStatement />
-      <ProblemStatementTabs />
-      <Timeline />
-      <TechStack />
-      <PastMedia />
-      <AboutSection />
-      <FAQSection />
+      <div id="problem-statements">
+        <ProblemStatementTabs />
+      </div>
+      <div id="timeline">
+        <Timeline />
+      </div>
+      <div id="tech-stack">
+        <TechStack />
+      </div>
+      <div id="past-media">
+        <PastMedia />
+      </div>
+      <div id="about">
+        <AboutSection />
+      </div>
+      <div id="organizers">
+        <OrganizersSection />
+      </div>
+      <div id="faq">
+        <FAQSection />
+      </div>
       <Footer />
     </main>
   )

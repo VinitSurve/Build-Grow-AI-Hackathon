@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div className="space-y-4">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-neon-blue to-neon-cyan bg-clip-text text-transparent">
-              TechVerse
+              Build & Grow AI
             </h3>
             <p className="text-muted-foreground leading-relaxed">
               Building the future, one hack at a time. Join India's premier developer community.
@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-border/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">© {currentYear} TechVerse Hackathon. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">© {currentYear} Build & Grow AI Hackathon. All rights reserved.</p>
           <p className="text-sm text-muted-foreground">Made with ❤️ in Mumbai & Pune</p>
         </div>
       </div>

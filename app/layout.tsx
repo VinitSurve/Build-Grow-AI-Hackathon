@@ -7,7 +7,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "TechVerse Hackathon 2025 | Mumbai & Pune",
+  title: "Build & Grow AI Hackathon 2025 | Mumbai & Pune",
   description: "Join the premier AI & Cloud hackathon in Mumbai and Pune. Build the future with Google technologies.",
   generator: "v0.app",
   icons: {

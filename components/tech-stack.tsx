@@ -18,7 +18,7 @@ export default function TechStack() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
@@ -32,7 +32,7 @@ export default function TechStack() {
               key={tech.name}
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.1, y: -5 }}
               className="glassmorphism border-border/50 hover:border-primary/50 rounded-xl p-6 flex flex-col items-center justify-center gap-3 cursor-pointer transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 group"

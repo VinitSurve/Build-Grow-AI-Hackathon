@@ -51,8 +51,8 @@ export function TypewriterCode() {
       </div>
 
       {/* Code Content */}
-      <div className="p-6 font-mono text-sm overflow-x-auto">
-        <pre className="text-foreground leading-relaxed">
+      <div className="p-6 font-mono text-sm overflow-x-hidden">
+        <pre className="text-foreground leading-relaxed whitespace-pre-wrap break-words">
           <code>
             {displayedCode.split("\n").map((line, i) => (
               <div key={i} className="min-h-[1.5rem]">

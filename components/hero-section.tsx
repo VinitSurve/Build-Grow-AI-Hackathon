@@ -30,7 +30,7 @@ export default function HeroSection() {
                 className="inline-block"
               >
                 <span className="text-sm font-mono text-neon-cyan tracking-wider uppercase">
-                  TechVerse Hackathon 2025
+                  Build & Grow AI Hackathon 2025
                 </span>
               </motion.div>
               <motion.h1

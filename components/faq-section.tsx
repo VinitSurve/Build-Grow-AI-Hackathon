@@ -5,7 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqs = [
   {
-    question: "Who can participate in TechVerse Hackathon?",
+    question: "Who can participate in Build & Grow AI Hackathon?",
     answer:
       "Anyone with a passion for technology can participate! Whether you're a student, professional developer, or tech enthusiast, you're welcome to join. Teams can have 2-4 members.",
   },
@@ -22,7 +22,7 @@ const faqs = [
   {
     question: "Is there any registration fee?",
     answer:
-      "No, TechVerse Hackathon is completely free to attend. We provide food, beverages, swag, and all necessary resources during the event.",
+      "No, Build & Grow AI Hackathon is completely free to attend. We provide food, beverages, swag, and all necessary resources during the event.",
   },
   {
     question: "What should I bring to the hackathon?",
@@ -43,7 +43,7 @@ export default function FAQSection() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
@@ -54,7 +54,7 @@ export default function FAQSection() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <Accordion type="single" collapsible className="space-y-4">

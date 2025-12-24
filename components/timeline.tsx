@@ -6,33 +6,33 @@ import { Calendar, FileText, Code, Trophy, Award } from "lucide-react"
 const timelineEvents = [
   {
     icon: Calendar,
-    title: "Registrations Open",
-    date: "January 15, 2025",
+    title: "Registration Starts",
+    date: "December 25, 2024",
     description: "Sign up and form your teams",
   },
   {
     icon: FileText,
-    title: "Problem Statement Reveal",
-    date: "February 1, 2025",
-    description: "All tracks announced with details",
+    title: "Workshop 1",
+    date: "January 10, 2025",
+    description: "First workshop session",
   },
   {
     icon: Code,
-    title: "Hackathon Day",
-    date: "March 15-17, 2025",
-    description: "48 hours of intense building",
+    title: "Workshop 2",
+    date: "January 17, 2025",
+    description: "Second workshop session",
   },
   {
     icon: Trophy,
-    title: "Demo Day",
-    date: "March 17, 2025",
-    description: "Present your solutions to judges",
+    title: "Pre Hackathon",
+    date: "January 24, 2025",
+    description: "Pre hackathon at Mumbai & Pune",
   },
   {
     icon: Award,
-    title: "Results & Awards",
-    date: "March 18, 2025",
-    description: "Winners announced and prizes distributed",
+    title: "Finale",
+    date: "January 26, 2025",
+    description: "Grand finale at Mumbai",
   },
 ]
 
@@ -43,7 +43,7 @@ export default function Timeline() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
@@ -63,7 +63,7 @@ export default function Timeline() {
                   key={event.title}
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="relative flex gap-8 items-start"
                 >

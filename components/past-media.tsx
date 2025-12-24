@@ -33,7 +33,7 @@ export default function PastMedia() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
@@ -47,7 +47,7 @@ export default function PastMedia() {
               key={event.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -8 }}
             >
