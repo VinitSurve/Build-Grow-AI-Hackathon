@@ -9,51 +9,59 @@ const gdgCloudMumbai = [
     role: "Lead Cloud Engineer",
     company: "",
     image: "/abhishek_sharma_RQClIHO.webp",
+    profile: "#",
   },
   {
     name: "Niharika Dhanik",
     role: "Cloud Engineer",
     company: "",
     image: "/niharika_dhanik_ivuUui4.webp",
+    profile: "#",
   },
   {
     name: "Rushabh Mahale",
     role: "Cloud Engineer",
     company: "Searce inc",
     image: "/rushabh_mahale_N4nLK69.webp",
+    profile: "#",
   },
   {
     name: "Nikunj Shah",
     role: "Sr. AVP- India & Mauritius",
     company: "Winjit Tech",
     image: "/nikunj_shah_3SB4kkE.webp",
+    profile: "#",
   },
 ]
 
 const gdgPune = [
   {
-    name: "Mahaveer Muttha",
+    name: "Antrixsh Gupta",
     role: "GDG Organizer",
-    company: "Birdvision consulting Pvt Ltd",
-    image: "/mahaveer_muttha_C00umYC_imgupscaler.ai_General_16K.jpg",
+    company: "",
+    image: "/antrixsh_gupta_imgupscaler.ai_V1(Fast)_2K.png",
+    profile: "#",
   },
   {
-    name: "Pranoti Nandurkar",
-    role: "WTM Ambassador",
-    company: "Tata consultancy services",
-    image: "/pranoti_nandurkar_imgupscaler.ai_General_16K.jpg",
+    name: "Pratik Kale",
+    role: "Co-Organizer",
+    company: "Impulsive Web",
+    image: "/pratik_kale_JE4xYmT_imgupscaler.ai_V1(Fast)_2K.png",
+    profile: "#",
   },
   {
-    name: "Swapnil Jathar",
-    role: "GDG Organizer",
-    company: "Mphasis",
-    image: "/swapnil_jathar_imgupscaler.ai_V1(Fast)_2K.png",
+    name: "Dnyanada Mahajan",
+    role: "Co Organizer",
+    company: "Gen Digital - NortonLifeLock",
+    image: "/dnyanada_mahajan_imgupscaler.ai_V1(Fast)_2K.png",
+    profile: "#",
   },
   {
-    name: "Namrata More",
-    role: "WTM ambassador",
-    company: "OneCard",
-    image: "/namrata_more_TjJKQM8_imgupscaler.ai_V1(Fast)_2K.png",
+    name: "Vatsal Jain",
+    role: "Event Organizer",
+    company: "vConstruct Pvt Ltd",
+    image: "/vatsal_jain_9uuB5SU_imgupscaler.ai_V1(Fast)_2K.png",
+    profile: "#",
   },
 ]
 
@@ -116,6 +124,16 @@ export default function OrganizersSection() {
                   {organizer.company && (
                     <p className="text-sm text-muted-foreground">{organizer.company}</p>
                   )}
+
+                  {/* View Profile */}
+                  {organizer.profile && (
+                    <a
+                      href={organizer.profile}
+                      className="mt-2 inline-block text-sm text-primary hover:underline"
+                    >
+                      View profile
+                    </a>
+                  )}
                 </div>
               </motion.div>
             ))}
@@ -132,7 +150,7 @@ export default function OrganizersSection() {
             className="text-3xl font-bold text-center mb-8"
           >
             <span className="bg-gradient-to-r from-neon-violet to-neon-cyan bg-clip-text text-transparent">
-              GDG Pune Organizers
+              GDG Cloud Pune Organizers
             </span>
           </motion.h3>
 
