@@ -17,7 +17,7 @@ export default function AboutSection() {
             <h2 className="text-4xl md:text-5xl font-bold">About Build & Grow AI Hackathon</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                This initiative is brought to you by <span className="text-neon-cyan font-semibold">GDG Cloud Mumbai</span> X <span className="text-neon-cyan font-semibold">GDG Pune</span>. Build & Grow AI Hackathon is more than just a hackathon—it's a movement to empower developers across India to build
+                This initiative is brought to you by <span className="text-neon-cyan font-semibold">GDG Cloud Mumbai</span> X <span className="text-neon-cyan font-semibold">GDG Cloud Pune</span>. Build & Grow AI Hackathon is more than just a hackathon—it's a movement to empower developers across India to build
                 solutions that matter. We bring together the brightest minds in technology to solve real-world problems
                 using cutting-edge tools.
               </p>

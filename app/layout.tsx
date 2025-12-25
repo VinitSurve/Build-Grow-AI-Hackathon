@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
+        url: "/favicon.jpg",
+        type: "image/jpeg",
+      },
+      {
         url: "/icon-light-32x32.png",
         media: "(prefers-color-scheme: light)",
       },
@@ -25,6 +29,7 @@ export const metadata: Metadata = {
         type: "image/svg+xml",
       },
     ],
+    shortcut: "/favicon.jpg",
     apple: "/apple-icon.png",
   },
 }
@@ -36,6 +41,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scroll-smooth">
+      <head>
+        {/* Explicit favicon links for broader browser support */}
+        <link rel="icon" href="/favicon.jpg" />
+        <link rel="shortcut icon" href="/favicon.jpg" />
+      </head>
       <body className={`${inter.className} font-sans antialiased`}>
         {children}
         <Analytics />
